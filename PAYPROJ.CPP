@@ -11,7 +11,7 @@ class account
   void output();
   account()
   { mobnum=0;
-   balance=0;
+    balance=0;
    }
 };
 void account::output()
@@ -38,11 +38,11 @@ void newuser()
   clrscr();
   gotoxy(35,9);
   cout<<"NEW USER";
-  cout<<"\n\n\n\t\t\t\tNAME: ";
+  cout<<"\n\n\n\t\t\tNAME: ";
   cin>>name;
   while(loop==1)
   {  loop=0;
-     cout<<"\n\n\t\t\tMOBILE NUMBER : ";
+     cout<<"\n\n\t\tMOBILE NUMBER : ";
      cin>>mnum;
      while(!f1.eof())
      {  f1.read((char*)&a,sizeof(a));
@@ -58,7 +58,7 @@ void newuser()
      ok++;
      }
      else
-     { cout<<"THIS NO. IS NOT AVAILABLE PLS ENTER NEW NO. ";
+     { cout<<"THIS NUMBER IS NOT AVAILABLE PLEASE ENTER A NEW NUMBER ";
       loop++;
      }
   }
